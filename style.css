@@ -185,7 +185,7 @@ nav ul li a:hover::after{
     pointer-events: none;
 } */
 
-/************About**************/
+/*--------------------------About-----------------------------*/
 
 /* img{
     width: 42%;
@@ -198,6 +198,7 @@ nav ul li a:hover::after{
     color: #f0ebeb;
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
     font-size: 18px;
+    background: #0b0d0b;
 }
 
 .row{
@@ -290,7 +291,7 @@ nav ul li a:hover::after{
 .projects-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(1,400px);
+    /* grid-template-rows: repeat(1,400px); */
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -350,7 +351,7 @@ nav ul li a:hover::after{
 .certifications-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(2, 400px);
+    /* grid-template-rows: repeat(2, 400px); */
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -458,6 +459,7 @@ nav ul li a:hover::after{
     padding: 25px 0;
     text-align: center;
     background: #262626;
+    width: 100%;
 }
 
 .social-icons a{
@@ -467,3 +469,122 @@ nav ul li a:hover::after{
     font-size: 25px;
 }
 
+/* --------------------Makimg it reaponsive------------------ */
+
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    nav{
+        position: relative;
+        padding: 10px 25px;
+    }
+    nav.sticky{
+        background: #080808;
+        padding: 10px 50px;
+        
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #db0285;
+        position: fixed;
+        top: 0;
+        right: 0;
+        right: -200px;
+        width: 200px;
+        height: 100%;
+        padding-top: 50px;
+        transition: right 0.7s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .header-text{
+        margin-top: 50%;
+        font-size: 16px;
+    }
+    .header-text p{
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    #self-info{
+        font-size: 13px;
+    }
+    .header-text button{
+        font-size: 10px;
+        padding: 10px 10px;
+        margin-top: 25px;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .projects-list div h2{
+        font-size: 25px;
+    }
+    
+    .projects-list div p{
+        /* text-align: justify; */
+        font-size: 14px;
+    }
+
+    #certifications{
+        padding-top: 15px;
+    }
+    .certifications-list div a{
+        margin-top: 10px;
+        margin-left: 155px;
+    }
+    .certifications-list div h2{
+        font-size: 25px;
+    }
+    
+    .certifications-list div p{
+        font-size: 14px;
+    }
+    .sub-title-contact{
+        font-size: 16px;
+    }
+    
+    #contact h1{
+        font-size: 30px;
+    }
+    
+    #contact p{
+        font-size: 16px;
+        padding: 0 25px;
+    }
+
+    #contact button{
+        font-size: 15px;
+        padding: 10px 10px;
+        margin-top: 25px;
+    }
+    .social{
+        padding: 20px 0;
+    }
+    
+    .social-icons a{
+        font-size: 20px;
+    }
+}
