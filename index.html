@@ -32,7 +32,7 @@
                     <h1 id="name-head"><span>Shubhada</span> Lad</h1>
                     <h1>I'm a student and I love coding</h1>
                     <h3 id="self-info">I am an upcoming engineer who is <br>always ready to learn new skills and who loves travelling.</h3>
-                    <button type="button">Lets connect</button>
+                    <button type="button" onclick="scrollToContact()">Lets connect</button>
                 </div>
             </div>
             <!-- photo -->
@@ -192,12 +192,9 @@
          </div>
 
         <!-- ---------------------------------------script------------------------------- -->
-        <script>
+        <script src="main.js"> 
             // sticky navbar
-            window.addEventListener("scroll", function(){
-                var nav = document.querySelector("nav");
-                nav.classList.toggle("sticky", window.scrollY > 0)
-            })
+            
 
             // nabvar end
             // var tablinks = document.getElementsByClassName("tab-links");
@@ -215,15 +212,5 @@
             // }
 
         </script> 
-        <script>
-            var sidemenu = document.getElementById("sidemenu");
-
-            function openmenu(){
-                sidemenu.style.right = "0";
-            }
-            function closemenu(){
-                sidemenu.style.right = "-200px";
-            }
-        </script>
     </body>
 </html>
