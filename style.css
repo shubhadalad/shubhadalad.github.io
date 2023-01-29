@@ -51,17 +51,10 @@ nav.sticky{
 nav.sticky ul li{
     color: #fff;
 }
-.logo{
-    font-size: 40px;
-    font-weight: bold;
-    /* font-style: italic; */
-    float: left;
-    /* color: #7109ad; */
-    /* color: #8f09ad; */
-    color: #db0285;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    cursor: pointer;
+.logo-img{
+    height: 100px;
+    filter: invert(80%) sepia(98%) saturate(7209%) hue-rotate(317deg) brightness(90%) contrast(98%);
+    height: 50px;
 }
 
 nav ul li{
@@ -117,6 +110,7 @@ nav ul li a:hover::after{
 
 .header-text button{
     padding: 20px 50px;
+    border-style: solid;
     background-color: #080808;
     color: #db0285;
     border-color: #db0285;
@@ -218,7 +212,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-1{
-    flex-basis: 35%;
+    flex-basis: 25%;
     width: 350px;
 }
 
@@ -230,7 +224,9 @@ nav ul li a:hover::after{
 }
 
 .about-col-2{
-     flex-basis: 60%;
+     flex-basis: 70%;
+     padding: 100px 50px;
+     
      text-align: justify;
      text-justify: inter-word;
      color: #bfbdb6;
@@ -416,7 +412,7 @@ nav ul li a:hover::after{
 /* -------------------Contact----------------------- */
 
 #contact{
-    padding: 50px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
@@ -443,6 +439,7 @@ nav ul li a:hover::after{
 
 #contact button{
     padding: 20px 50px;
+    border-style: solid;
     background-color: #080808;
     color: #db0285;
     border-color: #db0285;
@@ -467,7 +464,7 @@ nav ul li a:hover::after{
 /* ------------------------------social media----------------------- */
 
 .social{
-    padding: 25px 0;
+    padding: 20px 0;
     text-align: center;
     background: #262626;
     width: 100%;
