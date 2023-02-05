@@ -531,7 +531,7 @@ nav .fa-solid{
 
 /* --------------------Making it reaponsive---------------------------------------------------------*/
 
-@media only screen and (max-width: 850px){
+@media only screen and (min-width: 600px) and (max-width: 850px){
     nav{
         position: fixed;
         padding: 15px 50px;
