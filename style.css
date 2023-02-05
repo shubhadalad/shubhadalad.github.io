@@ -124,7 +124,7 @@ nav ul li a:hover::after{
     background: rgba(219, 2, 133, 0.1);
     color: #db0285;
 }
-
+ /* -----------------------about--------------------------- */
 #about{
     /* background: linear-gradient(90deg, rgba(212, 0, 212, 0.3),rgba(0, 204, 255, 0.3)),url("images/bg3.jpg") fixed ; */
     padding: 100px 0;
@@ -176,7 +176,7 @@ nav ul li a:hover::after{
 
 .about-col-2{
      flex-basis: 70%;
-     padding:0 50px;
+     padding:0 100px;
      text-align: justify;
      text-justify: inter-word;
      color: #bfbdb6;
@@ -526,5 +526,157 @@ nav .fa-solid{
     
     .social-icons a{
         font-size: 20px;
+    }
+}
+
+/* --------------------Making it reaponsive---------------------------------------------------------*/
+
+@media only screen and (max-width: 850px){
+    nav{
+        position: fixed;
+        padding: 15px 50px;
+    }
+    nav.sticky{
+        background: #262626;
+        padding: 15px 50px;
+        
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 35px;
+    }
+    nav ul{
+        background: #262626;
+        position: fixed;
+        top: 0;
+        right: 0;
+        right: -200px;
+        width: 200px;
+        height: 100%;
+        padding-top: 50px;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .logo{
+        height: 40px;
+    }
+    .header-text{
+        font-size: 25px;
+    }
+    .header-text p{
+        font-size: 25px;
+    }
+    .header-text h1{
+        font-size: 65px;
+        font-weight: 600;
+    }
+    #name-head{
+        margin-top: 25px;
+    }
+    #self-info{
+        font-size: 18px;
+        line-height: 1.7;
+        margin-top: 20px;
+    }
+    .header-text button{
+        font-size: 17px;
+        padding: 20px 50px;
+        margin-top: 35px;
+    }
+    #about{
+        padding: 20px 0;
+    }
+    .sub-title{
+        font-size: 65px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 70px;
+        margin-top: 40px;
+    }
+    .about-col-1 img{
+        width: 40%;
+        height: 95%;
+        margin-left: 25%;
+    }
+
+    .about-img:before{
+        right: 180px;
+        top: 30px;
+        border: 10px solid rgba(219, 2, 133, 0.5);
+        width: 40%;
+    }
+    .about-col-2{
+        font-size: 18px;
+        padding: 25px 0;
+        line-height: 1.5;
+    }
+    .projects-list div h2{
+        font-size: 28px;
+    }
+    
+    .projects-list div p{
+        /* text-align: justify; */
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    #certifications{
+        padding: 25px 0;
+    }
+    .certifications-list div a{
+        margin-top: 10px;
+        margin-left: 155px;
+    }
+    .certifications-list div h2{
+        font-size: 28px;
+    }
+    
+    .certifications-list div p{
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    #contact{
+        padding: 200px 50px;
+    }
+
+    .sub-title-contact{
+        font-size: 25px;
+    }
+    
+    #contact h1{
+        font-size: 55px;
+    }
+    
+    #contact p{
+        font-size: 18px;
+        padding: 0 25px;
+        line-height: 1.4;
+    }
+
+    #contact button{
+        font-size: 17px;
+        padding: 20px 50px;
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+    .social{
+        padding: 25px 0;
+    }
+    
+    .social-icons a{
+        font-size: 25px;
     }
 }
